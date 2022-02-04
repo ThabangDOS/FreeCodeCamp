@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>The Good App Company Survey Form</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="title">
+                <h1 id="title" ><a href="www.goodmarketcampany.com" target="blank">The Good Marketing Company </a>- App Survey Form</h1>
+                <p id="description">
+                    Making Relevant Applications for Savvy users!
+                </p>
+            </div>
+            <div class="form-container">
+                <form action="submit" id="survey-form">
+                    <p><label for="name" id="name-label">Name</label>
+                        <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder="Enter your name" required
+                            />
+                    </p>
+                    <p><label for="email" id="email-label">Email</label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="Enter your Email"
+                            required
+                            />
+                    </p>
+                    <p><label for="d-o-b" id="d-o-b-label">Date of Birth</label>
+                        <input type="date" name="date" id="d-o-b" />
+                    </p>
+                    <p><label for="number" id="number-label">Enter your Cellphone Number</label>
+                        <input type="number" name="number" id="number" min="7" max="10" placeholder="Enter your number here."/>
+                    </p>
+                    <p><label for="dropdown" id="dropdown-label">What is your Profession?</label>
+                            <select type="select" id="dropdown">
+                                <option value="information-technology">Information-Technology</option>
+                                <option value="consultancy">Consultancy</option>
+                                <option value="ccounting-and-finance">Accounting-and-Finance</option>
+                                <option value="engineering">Engineering</option>
+                                <option value="sales">Sales</option>
+                                <option value="general">General</option>
+                                <option value="marketing">Marketing</option>
+                                <option value="healthcare">Healthcare</option>
+                                <option value="administration">Administration</option>
+                                <option value="military/law-enforcement">Military/law-enforcement</option>
+                                <option value="military/law-enforcement">Unemployed</option>
+                                </select>
+                    </p>
+                    <div class="col-div">
+                        <div class="col-1">
+                        <h4>What kind of cellphone do you own?</h4>
+                        <p><input type="radio" name="select" id="select" value="Android"/><label for="radio"
+                                >Android</label
+                                >
+                        </p>
+                        <p><input type="radio" name="select" id="select2" value="iPhone"/><label for="radio"
+                                >iPhone</label
+                                >
+                        </p>
+                        <p><input type="radio" name="select" id="select3" value="Older-phone"/><label for="radio"
+                                >Older Phone</label
+                                >
+                        </p>
+                        </div>
+                        <div class="col-2">
+                            <h4>Do you get relevant adverts while you are on your apps?</h4>
+                            <p><input type="radio" name="advert" id="yes" value="yes" /><label for="radio"
+                            >Yes</label
+                            ></p>
+                            <p><input type="radio" name="advert" id="no" value="no" /><label for="radio"
+                            >No</label
+                            ></p>
+                            <p><input type="radio" name="advert" id="sometimes" value="sometimes"/><label for="radio"
+                            >Sometimes</label
+                            ></p>
+                        </div>
+                    </div>
+                    <h4>Which Apps have you used in the past 30 days?</h4>
+                    <div class="col-div">
+                        <div class="col-3">
+                            <p><input type="checkbox" name="checkbox" id="checkbox" value="amazon"/><label for="checkbox">Amazon</label></p>
+                            <p><input type="checkbox" name="checkbox" id="checkbox" value="Banking-app" /><label for="checkbox">Banking apps</label></p>
+                            <p><input type="checkbox" name="checkbox" id="checkbox" value="Chrome"/><label for="checkbox">Chrome</label></p>
+                            <p><input type="checkbox" name="checkbox" id="checkbox" value="Facebook"/><label for="checkbox">Facebook</label></p>
+                            <p><input type="checkbox" name="checkbox" id="checkbox" value="Gmail"/><label for="checkbox">Gmail</label></p>
+                            <p><input type="checkbox" name="checkbox" id="checkbox" value="Instagram"/><label for="checkbox">Instagram</label></p>
+                            <p><input type="checkbox" name="checkbox" id="checkbox" value="Linkedin"/><label for="checkbox">Linkedin </label></p>
+                        </div>
+                        <div class="col-4">
+                            <p><input type="checkbox" name="checkbox" id="checkbox" value="Media Player" /><label for="checkbox">Media Player</label></p>
+                            <p><input type="checkbox" name="checkbox" id="checkbox" value="Mr Delivery" /><label for="checkbox">Mr Delivery</label></p>
+                            <p><input type="checkbox" name="checkbox" id="checkbox" value="PDF"/><label for="checkbox">PDF</label></p>
+                            <p><input type="checkbox" name="checkbox" id="checkbox" value="Snapchat"/><label for="checkbox">Snapchat</label></p>
+                            <p><input type="checkbox" name="checkbox" id="checkbox"value="Take-a-lot" /><label for="checkbox">Take-a-lot</label></p>
+                            <p><input type="checkbox" name="checkbox" id="checkbox"value="Twitter" /><label for="checkbox">Twitter</label></p>
+                            <p><input type="checkbox" name="checkbox" id="checkbox"value="Telegram" /><label for="checkbox">Telegram</label></p>
+                        </div>
+                        <div class="col-5">
+                            <p><input type="checkbox" name="checkbox" id="checkbox" value="TikTok"/><label for="checkbox">TikTok</label></p>
+                            <p><input type="checkbox" name="checkbox" id="checkbox" value="Whatsapp"/><label for="checkbox">Whatsapp</label></p>
+                            <p><input type="checkbox" name="checkbox" id="checkbox" value="Word apps"/><label for="checkbox">Word apps</label></p>
+                            <p><input type="checkbox" name="checkbox" id="checkbox" value="Uber/Uber Eats"/><label for="checkbox">Uber/Uber Eats</label></p>
+                            <p><input type="checkbox" name="checkbox" id="checkbox" value="Youtube"/><label for="checkbox">Youtube</label></p>
+                            <p><input type="checkbox" name="checkbox" id="checkbox" value="Zoom"/><label for="checkbox">Zoom</label></p>
+                            <p><input type="checkbox" name="checkbox" id="checkbox" value="None of the above"/><label for="checkbox">None of the above</label></p>
+                        </div>
+                    </div>
+                    <p>What kind of adverts do you prefer watching on your Phone and how long should they be?</p>
+                    <textarea
+                            name="comment"
+                            id="comment"
+                            cols="30"
+                            rows="10"
+                            placeholder="Enter your comment here."
+                            >
+                    </textarea>
+                    <button type="submit" value="submit" id="submit" />SUBMIT</button>
+            </div>
+            </form>
+            <footer>
+                <p>Thank you for your time!!!</p>
+                <hr>
+                <p>&copy; Copyrights 2022 - GMC-Market-IT</p>
+            </footer>
+        </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    </body>
+</html>

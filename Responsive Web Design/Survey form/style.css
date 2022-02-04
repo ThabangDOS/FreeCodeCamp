@@ -1,0 +1,153 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1em;
+  color: whitesmoke;
+  --primary-color: rgb(44, 123, 241);
+  background-image: url(img.jpg);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1300px;
+  justify-content: center;
+}
+
+.title {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+#title {
+  color: whitesmoke;
+}
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+a:hover {
+  color: whitesmoke;
+  cursor: pointer;
+}
+#description {
+  opacity: 0.8;
+}
+.form-container {
+  margin: 0 auto;
+  padding: 0 0.5em;
+  background-color: rgba(119, 136, 153, 0.5);
+  max-width: 980px;
+}
+
+#survey-form {
+  margin: 1rem auto;
+  padding-top: 0.5em;
+  max-width: 100%;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: block;
+  justify-content: space-around;
+}
+
+#name,
+#email,
+#d-o-b,
+#number,
+#dropdown,
+#submit {
+  margin: 0.5em auto;
+  padding: 0 15px;
+  display: block;
+  width: 70%;
+  height: 2em;
+  border: 1px solid transparent;
+  border-radius: 15rem;
+  color: var(--primary-color);
+}
+#comment {
+  margin: 1rem auto;
+
+  display: block;
+  width: 70%;
+  border: 1px solid transparent;
+}
+label {
+  margin: 0 auto;
+}
+input checkbox {
+}
+#submit {
+  font-size: 2em;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.39);
+  color: var(--primary-color);
+  padding: 10px 0;
+  border: 2px solid var(--primary-color);
+}
+
+#submit:hover {
+  background-color: var(--primary-color);
+  color: whitesmoke;
+  cursor: pointer;
+}
+footer {
+  text-align: center;
+}
+hr {
+  width: 100px;
+  border: 2px solid var(--primary-color);
+}
+@media (max-width: 425px) {
+  #comment {
+    display: block;
+    width: 95%;
+  }
+}
+@media (min-width: 769px) {
+  #name,
+  #email,
+  #d-o-b,
+  #number,
+  #dropdown,
+  #submit,
+  #comment {
+    display: inline-block;
+  }
+  #name {
+    margin-left: 170px;
+  }
+  #email {
+    margin-left: 170px;
+  }
+  #d-o-b {
+    margin-left: 125px;
+  }
+  #dropdown {
+    margin-left: 52px;
+  }
+
+  #number {
+    margin-left: 15px;
+  }
+}
+@media (min-width: 425px) {
+  .col-div {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .col-5,
+  .col-4,
+  .col-3 {
+    flex: 0.32;
+    justify-content: center;
+  }
+  .col-2,
+  .col-1 {
+    flex: 0.5;
+  }
+}
